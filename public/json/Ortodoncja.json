@@ -1,0 +1,42 @@
+{
+  "title": "Ortodoncja",
+  "subtitle": "Nakładki prostujące PRO SMILE",
+  "minititle": "Nowoczesny system prostowania uśmiechu – wygodny, dyskretny i skuteczny",
+  "intro": "Zdrowy i piękny uśmiech zwiększa poczucie pewności siebie. Wiemy, co dla Ciebie jest ważne – odkryj wygodę i komfort nakładek ortodontycznych PRO SMILE.",
+  "what_are": "Czym są nakładki prostujące PRO SMILE?",
+  "what_are_desc": "Nakładki ortodontyczne to przezroczyste aparaty korekcyjne przesuwające zęby w pożądanym kierunku. Możesz je zdejmować w dowolnym momencie bez konieczności wizyty u dentysty. Niewidoczne nakładki wyprostują Twoje zęby, nie powodując niedogodności i dyskomfortu związanego z noszeniem tradycyjnego aparatu ortodontycznego. W ramach spersonalizowanego planu leczenia stosowane są indywidualne zestawy nakładek. Dzięki nim, w przeciwieństwie do tradycyjnego aparatu ortodontycznego, zęby nie tylko zostaną wyprostowane, ale również skraca się czas leczenia. Za pomocą nakładek PRO SMILE jesteśmy w stanie skorygować niewielkie i średnie niedoskonałości zębów. Czas leczenia zależy od konkretnego przypadku i wynosi od 3 do 12 miesięcy.",
+  "benefits_title": "Dlaczego nakładki?",
+  "benefits": [
+    {
+      "name": "Komfort",
+      "text": "Otrzymujesz pełny pakiet nakładek ortodontycznych wraz z instrukcją użytkowania od swojego dentysty.",
+      "icon": "fa-solid fa-couch"
+    },
+    {
+      "name": "Bezpieczeństwo",
+      "text": "Plan leczenia jest tworzony oraz sprawdzany przez najwyższej klasy specjalistów, którzy zadbają o Twój uśmiech.",
+      "icon": "fa-solid fa-shield-halved"
+    },
+    {
+      "name": "Estetyka",
+      "text": "Nakładki ortodontyczne są dyskretne i pozwalają Ci na szeroki, piękny uśmiech także w trakcie leczenia.",
+      "icon": "fa-solid fa-gem"
+    },
+    {
+      "name": "Skuteczność",
+      "text": "Indywidualny plan leczenia pokaże Ci, jak mogą wyglądać Twoje zęby – Tobie pozostaje tylko czekać na efekty!",
+      "icon": "fa-solid fa-check-double"
+    }
+  ],
+  "features_title": "Zalety nakładek PRO SMILE",
+  "features": [
+    "nie zawierają toksycznego BPA",
+    "szybki czas realizacji zamówienia",
+    "możesz je sam zdjąć i ponownie założyć",
+    "nakładki PRO SMILE są produkowane w Polsce"
+  ],
+  "scan_title": "Gdzie możesz wykonać skan 3D?",
+  "scan_desc": "W naszym gabinecie ArtDent w Zielonej Górze wykonasz skan 3D, umówisz się na wizytę i sporządzisz swój indywidualny plan leczenia. Zapraszamy do kontaktu!",
+  "prosmile_link": "https://prosmile.club/",
+  "prosmile_text": "Dowiedz się więcej o systemie PRO SMILE"
+}

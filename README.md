@@ -53,9 +53,10 @@ The project is structured as a Next.js application with the following key script
 
 - `npm run dev`: Starts the development server.
 - `npm run build`: Builds the production-ready application.
-- `npm run start`: Starts the production server.
+- `npm run start`: Starts the production server on port 3000.
 - `npm run lint`: Runs linting to check for code quality issues.
 - `npm run analyze`: Analyzes the bundle size for optimization.
+- `npm run pm2:start` / `pm2:reload` / `pm2:stop`: Process manager commands.
 
 For a complete list of dependencies and scripts, refer to the `package.json` file.
 
@@ -84,6 +85,42 @@ To set up the project locally, follow these steps:
    ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+
+## Deployment (Nginx + PM2, port 3000)
+
+Produkcja: Next.js (`next start`) na `127.0.0.1:3000` pod PM2, Nginx jako reverse proxy.
+
+Pliki weryfikacyjne SEO (serwowane z `public/`):
+- `ads.txt`
+- `BingSiteAuth.xml`
+- `googlebe45dfc5ad1b8108.html`
+- `robots.txt`
+- `sitemap.xml`
+
+### 1. Aplikacja
+
+```bash
+npm ci
+npm run build
+npm run pm2:start
+pm2 save
+pm2 startup
+```
+
+Konfiguracja PM2: `ecosystem.config.js`.
+
+### 2. Nginx
+
+Konfiguracja: `deploy/nginx.conf` (HTTPS, www, nagłówki bezpieczeństwa, przekierowania 301 z dawnego `.htaccess`).
+
+```bash
+sudo cp deploy/nginx.conf /etc/nginx/sites-available/stomatolog-dentysta.pl
+sudo ln -sf /etc/nginx/sites-available/stomatolog-dentysta.pl /etc/nginx/sites-enabled/
+sudo certbot --nginx -d www.stomatolog-dentysta.pl -d stomatolog-dentysta.pl
+sudo nginx -t && sudo systemctl reload nginx
+```
+
+Po zmianie kodu: `npm run build && npm run pm2:reload`.
 
 ## Features
 

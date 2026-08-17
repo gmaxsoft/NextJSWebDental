@@ -17,7 +17,7 @@ const header = () => {
                                     alt="Logo Dentysta"
                                     width={273}
                                     height={50}
-                                    sizes="100vw"
+                                    sizes="(max-width: 768px) 100vw, 273px"
                                     style={{
                                         width: '100%',
                                         height: 'auto',

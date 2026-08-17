@@ -4,69 +4,84 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
   <loc>https://www.stomatolog-dentysta.pl/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/oferta/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/protetyka/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stomatolog-dentysta.pl/ortodoncja/</loc>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/pacjent/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stomatolog-dentysta.pl/mediraty/</loc>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/kontakt/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/oferta/profilaktyka/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/oferta/chirurgia-stomatologiczna/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/oferta/stomatologia-estetyczna/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/oferta/wybielanie-zebow/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/oferta/stomatologia-zachowawcza/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/oferta/periodontologia/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/oferta/protetyka-stomatologiczna/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.stomatolog-dentysta.pl/oferta/leczenie-endodontyczne-kanalowe/</loc>
-  <lastmod>2025-11-09T17:12:17+00:00</lastmod>
+  <lastmod>2026-03-02T12:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+
 </urlset>

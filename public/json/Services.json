@@ -9,49 +9,49 @@
             "name": "Profilaktyka",
             "icon": "flaticon-drilling",
             "text": "Profilaktyka w stomatologii odgrywa ogromną rolę w zapobieganiu próchnicy, chorobom przyzębia oraz innym chorobom zębów i jamy ustne",
-            "url": "/oferta/profilaktyka"
+            "url": "/oferta/profilaktyka/"
         },
         {
             "name": "Chirurgia stomatologiczna",
             "icon": "flaticon-dental-floss",
             "text": "Chirurgia stomatologiczna to jedna z kluczowych gałęzi stomatologii i obejmuje szereg zabiegów w obszarze jamy ustnej nie tylko usuwanie zębów.",
-            "url": "/oferta/chirurgia-stomatologiczna"
+            "url": "/oferta/chirurgia-stomatologiczna/"
         },
         {
             "name": "Stomatologia estetyczna",
             "icon": "flaticon-tooth",
             "text": "Poprawiamy wygląd i estetykę zębów oraz twarzy, pozwala nam to korygować kolor, kondycje, kształt i wielkość zębów.",
-            "url": "/oferta/stomatologia-estetyczna"
+            "url": "/oferta/stomatologia-estetyczna/"
         },
         {
             "name": "Wybielanie zębów",
             "icon": "flaticon-shiny-tooth",
             "text": "Możliwość rozjaśnienia zębów o kilka odcieni. Róźne metody wybielania dopasowane do potrzeb. Wybielanie zębów żywych i martwych.",
-            "url": "/oferta/wybielanie-zebow"       
+            "url": "/oferta/wybielanie-zebow/"       
         },
         {
             "name": "Stomatologia zachowawcza",
             "icon": "flaticon-dentist-chair",
             "text": "Przeprowadzanie badań kontrolnych jamy ustnej i zębów, usuwanie problemów związanych z nadwrażliwością oraz krwawieniem dziąseł, oczyszczanie zębów z płytki nazębnej oraz kamienia.",
-            "url": "/oferta/stomatologia-zachowawcza"
+            "url": "/oferta/stomatologia-zachowawcza/"
         },
         {
             "name": "Periodontologia",
             "icon": "flaticon-tooth-1",
             "text": "Profesjonalna eliminacja płytki nazębnej. Skaling mający na celu usunięcie z korzenia zęba biofilmu bakteryjnego, kamienia i osadów, zaleczenie aktywnych zapalnie kieszonek oraz polerowanie powierzchni zębów.",
-            "url": "/oferta/periodontologia"
+            "url": "/oferta/periodontologia/"
         },
         {
             "name": "Protetyka stomatologiczna",
             "icon": "flaticon-tooth-with-braces",
             "text": "Zajmujemy się odbudową brakujących tkanek zębowych po ich uszkodzeniu lub całkowitej utracie oraz rekonstrukcją zębów bardzo zniszczonych. W ofercie mamy także Protezy acronowe (elastyczne), mosty.",
-            "url": "/oferta/protetyka-stomatologiczna"
+            "url": "/oferta/protetyka-stomatologiczna/"
         },
         {
             "name": "Leczenie endodontyczne (Kanałowe)",
             "icon": "flaticon-decayed-tooth",
             "text": "Leczenie kanałowe pierwotne (zęby wcześniej nieleczone kanałowo oraz leczenie kanłowe wtórne (retreatment, reendo czyli ponowne leczenie kanałowe zębów już wczesniej leczonych).",
-            "url": "/oferta/leczenie-endodontyczne-kanalowe"
+            "url": "/oferta/leczenie-endodontyczne-kanalowe/"
         }
     ]
 }

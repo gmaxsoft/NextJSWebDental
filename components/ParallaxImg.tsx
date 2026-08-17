@@ -15,7 +15,6 @@ const ParallaxImg = () => {
 							src="/images/bg_4.webp"
 							alt="Tło Stomatolog"
 							fill
-							priority={true}  // ← LCP → priorytet!
 							quality={85}
 							sizes="100vw"
 							style={{

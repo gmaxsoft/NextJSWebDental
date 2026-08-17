@@ -8,22 +8,32 @@
         },
         {
             "name": "Oferta",
-            "link": "/oferta",
+            "link": "/oferta/",
             "text": "Oferta gabinetu"
         },
         {
             "name": "Protetyka",
-            "link": "/protetyka",
+            "link": "/protetyka/",
             "text": "Protetyka stomatologiczna"
         },
         {
+            "name": "Ortodoncja",
+            "link": "/ortodoncja/",
+            "text": "Nakładki prostujące PRO SMILE"
+        },
+        {
             "name": "Pacjent",
-            "link": "/pacjent",
+            "link": "/pacjent/",
             "text": "Informacje dla pacjenta"
         },
         {
+            "name": "MediRaty",
+            "link": "/mediraty/",
+            "text": "Finansowanie leczenia na raty"
+        },
+        {
             "name": "Kontakt",
-            "link": "/kontakt",
+            "link": "/kontakt/",
             "text": "Kontakt stomatolog Zielona Góra"
         }
     ]

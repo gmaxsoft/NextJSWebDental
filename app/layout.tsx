@@ -25,6 +25,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.stomatolog-dentysta.pl/'),
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   title: 'Dentysta Zielona Góra,stomatolog Zielona Góra,protetyka Zielona Góra, dentysta Anna Miśków',
   description: 'Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe, nakładki prostujące',
   keywords: 'stomatolog zielona góra, dentysta zielona góra. Protetyka, Protezy acronowe, Anna Miśków, korony cyrkonowe, zielona góra, gabinet, wybielanie zębów, nakładki prostujące PRO SMILE',
@@ -33,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Dentysta Zielona Góra Anna Miśków|Protetyka Zielona Góra|dentysta Zielona Góra|stomatolog zielona góra',
     description: 'Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe',
-    url: 'https://www.stomatolog-dentysta.pl',
+    url: 'https://www.stomatolog-dentysta.pl/',
     siteName: 'ArtDent Dentysta Zielona Góra Stomatolog i protetyka Zielona Góra',
     locale: 'pl_PL',
     images: '/opengraph-image.jpg',

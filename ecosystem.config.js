@@ -1,17 +1,19 @@
 module.exports = {
   apps: [
     {
-      name: 'next-app',
+      name: 'stomatolog-dentysta',
       script: 'node_modules/next/dist/bin/next',
       args: 'start -p 3000',
-      cwd: '/domains/demo.maxsoft.pl/public_html',  // ścieżka na serwerze
-      env: {
-        NODE_ENV: 'production',
-      },
+      cwd: __dirname,
       instances: 1,
+      exec_mode: 'fork',
       autorestart: true,
       watch: false,
-      max_memory_restart: '1G',
+      max_memory_restart: '512M',
+      env: {
+        NODE_ENV: 'production',
+        PORT: 3000,
+      },
     },
   ],
 };

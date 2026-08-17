@@ -114,7 +114,8 @@ export default function OfferDetailPage({ params }: { params: { slug: string } }
   }
 
   // Szukamy obiektu w tablicy `Content.items`, który pasuje do aktualnego `slug`
-  const pageContent = Content.items.find(item => item.url === `/oferta/${slug}`);
+  // Dictionary.json ma URL z trailing slash: /oferta/profilaktyka/
+  const pageContent = Content.items.find(item => item.url === `/oferta/${slug}/`);
 
   if (!pageContent) {
     notFound();

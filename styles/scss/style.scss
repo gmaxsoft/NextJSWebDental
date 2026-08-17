@@ -2348,3 +2348,7 @@ textarea.form-control {
 	top: 0;
 	left: 0;
 }
+
+.google-map iframe {
+	filter: grayscale(100%);
+}

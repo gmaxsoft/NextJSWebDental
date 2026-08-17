@@ -17,20 +17,20 @@ const BefroreAfter = () => {
           <div className="row">
             <div className="col-md-4 d-flex services-before align-self-stretch p-4">
               <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src="/images/before.webp" srcSet="/images/before.webp" alt="Przed" />}
-                itemTwo={<ReactCompareSliderImage src="/images/after.webp" srcSet="/images/after.webp" alt="Po" />}
+                itemOne={<ReactCompareSliderImage src="/images/before.webp" srcSet="/images/before.webp" alt="Przed" loading="lazy" />}
+                itemTwo={<ReactCompareSliderImage src="/images/after.webp" srcSet="/images/after.webp" alt="Po" loading="lazy" />}
               />
             </div>
             <div className="col-md-4 d-flex services-before align-self-stretch p-4">
               <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src="/images/before-1.webp" srcSet="/images/before-1.webp" alt="Przed" />}
-                itemTwo={<ReactCompareSliderImage src="/images/after-1.webp" srcSet="/images/after-1.webp" alt="Po" />}
+                itemOne={<ReactCompareSliderImage src="/images/before-1.webp" srcSet="/images/before-1.webp" alt="Przed" loading="lazy" />}
+                itemTwo={<ReactCompareSliderImage src="/images/after-1.webp" srcSet="/images/after-1.webp" alt="Po" loading="lazy" />}
               />
             </div>
             <div className="col-md-4 d-flex services-before align-self-stretch p-4">
               <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src="/images/before-3.webp" srcSet="/images/before-3.webp" alt="Przed" />}
-                itemTwo={<ReactCompareSliderImage src="/images/after-3.webp" srcSet="/images/after-3.webp" alt="Po" />}
+                itemOne={<ReactCompareSliderImage src="/images/before-3.webp" srcSet="/images/before-3.webp" alt="Przed" loading="lazy" />}
+                itemTwo={<ReactCompareSliderImage src="/images/after-3.webp" srcSet="/images/after-3.webp" alt="Po" loading="lazy" />}
               />
             </div>
           </div>

@@ -22,14 +22,13 @@ const footer = () => {
                                         alt="Logo Dentysta Zielona góra"
                                         width={273}
                                         height={50}
-                                        sizes="100vw"
+                                        sizes="(max-width: 768px) 100vw, 273px"
                                         style={{
                                             width: '100%',
                                             height: 'auto',
                                             maxWidth: '273px',
                                             minHeight: '60px'
                                         }}
-                                        priority
                                     />
                                 </Link>
                                 <p className="text-justify pr2rem" dangerouslySetInnerHTML={{ __html: Content.tags }}></p>
