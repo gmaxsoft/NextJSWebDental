@@ -1,0 +1,42 @@
+/* Minimalne animacje zamiast pełnego animate.css */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.animate__animated {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__pulse {
+  animation-name: pulse;
+  animation-duration: 1.2s;
+}
+
+@keyframes shakeY {
+  0%, 100% { transform: translateY(0); }
+  20%, 60% { transform: translateY(-4px); }
+  40%, 80% { transform: translateY(4px); }
+}
+
+.animate__shakeY {
+  animation-name: shakeY;
+  animation-duration: 1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate__animated {
+    animation: none !important;
+  }
+}

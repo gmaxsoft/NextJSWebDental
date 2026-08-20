@@ -2,6 +2,7 @@
 import Content from "@/public/json/Footer.json";
 import Image from 'next/image'
 import Link from 'next/link';
+import { MapPin, Phone } from 'lucide-react';
 
 const footer = () => {
     return (
@@ -39,7 +40,7 @@ const footer = () => {
                                 <h2 className="widget-title pb-2 fw-semibold">Godziny otwarcia</h2>
                                 <table className="schedule" width="100%">
                                     <tbody>
-                                        {Content.items.map((item, key) => (
+                                        {Content.items.map((item) => (
                                             <tr key={item.name} className="d-flex justify-content-between border-bottom py-2">
                                                 <td>{item.name} </td>
                                                 <td className="text-primary">{item.text}</td>
@@ -55,12 +56,12 @@ const footer = () => {
                                 <h2 className="widget-title pb-2 fw-semibold">{Content.datatitle}</h2>
                                 <div className="contact-item">
                                     <p className="py-2" dangerouslySetInnerHTML={{ __html: Content.dataname }}></p>
-                                    <p className="py-2">
-                                        <i className="fa-solid fa-location-dot"></i>
+                                    <p className="py-2 d-flex align-items-start gap-2">
+                                        <MapPin aria-hidden size={18} strokeWidth={2} color="#853665" className="mt-1 flex-shrink-0" />
                                         <span dangerouslySetInnerHTML={{ __html: Content.dataaddress }}></span>
                                     </p>
-                                    <p>
-                                        <i className="fa-solid fa-phone"></i>
+                                    <p className="d-flex align-items-center gap-2">
+                                        <Phone aria-hidden size={18} strokeWidth={2} color="#853665" className="flex-shrink-0" />
                                         <span><a href={`tel:${Content.datalink}`} title="Telefon">{Content.dataphone}</a></span>
                                     </p>
                                 </div>

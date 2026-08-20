@@ -1,26 +1,28 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-//import { GoogleAnalytics } from '@next/third-parties/google'
+import dynamic from 'next/dynamic'
 import { LocalBusiness, WithContext } from 'schema-dts';
-import Script from 'next/script';
 import 'bootstrap/dist/css/bootstrap.css'
-import "@/public/css/all.min.css";
 import '@/styles/scss/style.scss'
 import "@/styles/scss/flaticon/flaticon.css"
-import "animate.css"
+import '@/styles/animations.css'
 
 import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
-import BootstrapClient from '@/components/BootstrapClient'
 import Seo from '@/components/Seo';
+
+const BootstrapClient = dynamic(() => import('@/components/BootstrapClient'), {
+  ssr: false,
+});
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600'],
-  style: ['normal', 'italic'],
+  style: ['normal'],
   subsets: ['latin'],
-  display: 'swap'
+  display: 'swap',
+  adjustFontFallback: true,
 })
 
 export const metadata: Metadata = {
@@ -93,15 +95,6 @@ export default function RootLayout({
       "contactType": "Rezerwacja"
     }
   };
-
-  /*
-  <Script
-        async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5402951867053415`}
-        strategy="lazyOnload"
-        crossOrigin="anonymous"
-      />
-  */
 
   return (
     <html lang="pl" itemScope itemType='http://schema.org/WebPage' >

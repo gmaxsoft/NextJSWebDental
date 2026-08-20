@@ -2,6 +2,7 @@
 
 import Content from "@/public/json/Mediraty.json";
 import Link from 'next/link';
+import { Check } from 'lucide-react';
 
 const Mediraty = () => {
   return (
@@ -19,23 +20,23 @@ const Mediraty = () => {
             <div className="col-md-12">
               <p className="justify">{Content.intro}</p>
               <p className="mb-4">&nbsp;</p>
-              <h4 className="mb-4 text-left">{Content.what_is}</h4>
+              <h2 className="mb-4 text-left">{Content.what_is}</h2>
               <p className="justify">{Content.what_is_desc}</p>
               <p className="mb-4">&nbsp;</p>
-              <h3 className="mb-4 text-center">{Content.benefits_title}</h3>
+              <h2 className="mb-4 text-center">{Content.benefits_title}</h2>
               <ul className="list-unstyled">
                 {Content.benefits.map((item, key) => (
-                  <li key={key} className="mb-2">
-                    <span className="fa-solid fa-check text-primary me-2"></span>
-                    {item}
+                  <li key={key} className="mb-2 d-flex align-items-start gap-2">
+                    <Check aria-hidden size={18} strokeWidth={2.5} color="#853665" className="mt-1 flex-shrink-0" />
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
               <p className="mb-4">&nbsp;</p>
-              <h4 className="mb-4 text-left">{Content.medipay_title}</h4>
+              <h2 className="mb-4 text-left">{Content.medipay_title}</h2>
               <p className="justify">{Content.medipay_desc}</p>
               <p className="mb-4">&nbsp;</p>
-              <h4 className="mb-4 text-left">{Content.contact_title}</h4>
+              <h2 className="mb-4 text-left">{Content.contact_title}</h2>
               <p className="justify">{Content.contact_desc}</p>
               <p className="mb-4">
                 <strong>Infolinia MediRaty:</strong>{' '}
