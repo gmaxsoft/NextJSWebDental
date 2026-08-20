@@ -13,7 +13,6 @@ export default function BootstrapCarousel() {
     setIndex(selectedIndex);
   };
 
-  // d-none d-sm-block na samym .slider: pełna szerokość tła + brak CLS z JS
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} className="slider d-none d-sm-block">
       {bootstrap.map((item, idx) => (
@@ -23,7 +22,7 @@ export default function BootstrapCarousel() {
             alt={`Baner Stomatolog Dentysta ${idx + 1}`}
             width={1920}
             height={750}
-            sizes="(max-width: 575.98px) 0vw, 100vw"
+            sizes="(max-width: 575.98px) 576px, min(100vw, 1920px)"
             style={{
               width: '100%',
               height: 'auto',
@@ -33,7 +32,7 @@ export default function BootstrapCarousel() {
               display: 'block',
             }}
             priority={idx === 0}
-            quality={75}
+            quality={85}
           />
         </Carousel.Item>
       ))}

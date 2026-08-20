@@ -15,15 +15,16 @@ const header = () => {
                                 <Image
                                     src="/images/logo.webp"
                                     alt="Logo Dentysta"
-                                    width={273}
-                                    height={50}
-                                    sizes="(max-width: 768px) 100vw, 273px"
+                                    width={410}
+                                    height={75}
+                                    sizes="273px"
                                     style={{
                                         width: '100%',
                                         height: 'auto',
                                         maxWidth: '273px',
-                                        aspectRatio: '273 / 50',
+                                        aspectRatio: '410 / 75',
                                     }}
+                                    quality={95}
                                     priority
                                 />
                             </Link>
