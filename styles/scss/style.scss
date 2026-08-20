@@ -688,6 +688,15 @@ h5,
 				font-size: 18px !important;
 				color: $black;
 			}
+
+			h3.heading {
+				font-size: 18px;
+				color: $black;
+
+				a {
+					color: $black;
+				}
+			}
 		}
 	}
 }
@@ -704,7 +713,7 @@ h5,
 }
 
 .ftco-intro {
-	padding: 6em 0;
+	padding: 3em 0;
 	width: 100%;
 	height: 100%;
 	position: inherit;
@@ -1140,7 +1149,7 @@ textarea.form-control {
 
 
 .ftco-section {
-	padding: 7em 0;
+	padding: 4em 0;
 	position: relative;
 }
 
@@ -2202,6 +2211,85 @@ textarea.form-control {
 //other
 .services-before img {
 	border: 2px solid #853665;
+}
+
+.ortodoncja-benefits {
+	.services {
+		.icon {
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+			border: 1px solid rgba(133, 54, 101, 0.15);
+			@include border-radius(50%);
+
+			span {
+				font-size: 2.75rem;
+				color: #853665;
+			}
+		}
+
+		.media-body {
+			h3.heading {
+				font-size: 18px;
+				color: $black;
+			}
+		}
+	}
+}
+
+.ortodoncja-timeline {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto 2rem;
+	padding-left: 2.5rem;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0.9rem;
+		width: 3px;
+		background: #853665;
+	}
+
+	&__item {
+		position: relative;
+		padding-bottom: 2rem;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+
+	&__marker {
+		position: absolute;
+		left: -2.5rem;
+		top: 0;
+		width: 1.9rem;
+		height: 1.9rem;
+		border-radius: 50%;
+		background: #853665;
+		color: #fff;
+		font-size: 0.85rem;
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+	}
+
+	&__content {
+		h3 {
+			font-size: 1.15rem;
+			color: #853665;
+			margin-bottom: 0.5rem;
+		}
+
+		p {
+			margin-bottom: 0.5rem;
+		}
+	}
 }
 
 .justify {

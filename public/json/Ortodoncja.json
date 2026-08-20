@@ -10,22 +10,22 @@
     {
       "name": "Komfort",
       "text": "Otrzymujesz pełny pakiet nakładek ortodontycznych wraz z instrukcją użytkowania od swojego dentysty.",
-      "icon": "fa-solid fa-couch"
+      "icon": "Armchair"
     },
     {
       "name": "Bezpieczeństwo",
       "text": "Plan leczenia jest tworzony oraz sprawdzany przez najwyższej klasy specjalistów, którzy zadbają o Twój uśmiech.",
-      "icon": "fa-solid fa-shield-halved"
+      "icon": "Shield"
     },
     {
       "name": "Estetyka",
       "text": "Nakładki ortodontyczne są dyskretne i pozwalają Ci na szeroki, piękny uśmiech także w trakcie leczenia.",
-      "icon": "fa-solid fa-gem"
+      "icon": "Gem"
     },
     {
       "name": "Skuteczność",
       "text": "Indywidualny plan leczenia pokaże Ci, jak mogą wyglądać Twoje zęby – Tobie pozostaje tylko czekać na efekty!",
-      "icon": "fa-solid fa-check-double"
+      "icon": "CheckCheck"
     }
   ],
   "features_title": "Zalety nakładek PRO SMILE",
@@ -35,8 +35,56 @@
     "możesz je sam zdjąć i ponownie założyć",
     "nakładki PRO SMILE są produkowane w Polsce"
   ],
+  "malocclusion_title": "Jakie wady zgryzu leczymy?",
+  "malocclusion": [
+    "Stłoczenie zębów",
+    "Przerwy między zębami (diastemy, tremy)",
+    "Zgryz otwarty",
+    "Zgryz krzyżowy",
+    "Zgryz głęboki"
+  ],
+  "malocclusion_desc": "Każdy przypadek jest analizowany indywidualnie, co gwarantuje bezpieczeństwo i skuteczność terapii.",
   "scan_title": "Gdzie możesz wykonać skan 3D?",
   "scan_desc": "W naszym gabinecie ArtDent w Zielonej Górze wykonasz skan 3D, umówisz się na wizytę i sporządzisz swój indywidualny plan leczenia. Zapraszamy do kontaktu!",
   "prosmile_link": "https://prosmile.club/",
-  "prosmile_text": "Dowiedz się więcej o systemie PRO SMILE"
+  "prosmile_text": "Dowiedz się więcej o systemie PRO SMILE",
+  "timeline_title": "Przebieg leczenia nakładkami",
+  "timeline": [
+    {
+      "title": "Skanowanie pacjenta",
+      "text": "Przesłanie aktualnej dokumentacji pacjenta:",
+      "items": [
+        "Skan 3D (szczęka, żuchwa, zwarcie)",
+        "Pantomogram",
+        "Zdjęcia uśmiechu pacjenta (en face, prawy, lewy profil, z uśmiechem)",
+        "Zdjęcia wewnątrzustne (en face, prawy i lewy profil, zwarcie)"
+      ]
+    },
+    {
+      "title": "Przygotowanie planu leczenia",
+      "text": "Do 5 dni roboczych dział projektowy przygotowuje plan leczenia dla pacjenta w oparciu o dostarczoną dokumentację.",
+      "items": []
+    },
+    {
+      "title": "Akceptacja planu leczenia przez lekarza",
+      "text": "Plan leczenia jest ważny 30 dni od daty wysłania planu.",
+      "items": []
+    },
+    {
+      "title": "Akceptacja planu leczenia przez pacjenta",
+      "text": "Podpisanie zgody na leczenie.",
+      "items": []
+    },
+    {
+      "title": "Rozpoczęcie leczenia",
+      "text": "Do 10 dni roboczych PRO SMILE dostarcza nakładki do pierwszego etapu leczenia. Na pierwszej wizycie lekarz zakłada attachmenty i wykonuje IPR (jeśli wskazane w planie leczenia).",
+      "items": []
+    },
+    {
+      "title": "Obowiązkowe wizyty kontrolne",
+      "text": "Wizyty kontrolne są obowiązkowe.",
+      "items": []
+    }
+  ],
+  "timeline_desc": "Co 4 miesiące dostarczamy nakładki do kolejnego etapu leczenia po weryfikacji postępów leczenia przez lekarza prowadzącego."
 }
