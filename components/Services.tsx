@@ -18,7 +18,7 @@ const Services = ({ primary = true }: ServicesProps) => {
       <section className="ftco-section ftco-services">
         <div className="container">
           <div className="row justify-content-center mb-5 pb-2">
-            <div className="col-md-8 text-center heading-section animate__animated animate__fadeIn">
+							<div className="col-md-12 text-center heading-section">
               <span className="subheading">{Content.title}</span>
               <TitleTag className="mb-4 tworem">{Content.subtitle}</TitleTag>
               <p>{Content.minititle}</p>
@@ -32,7 +32,7 @@ const Services = ({ primary = true }: ServicesProps) => {
 
           <div className="row mb-5 pb-2">
             {Content.items.map((item) => (
-              <div key={item.name} className="col-md-3 d-flex services align-self-stretch p-4 animate__animated animate__shakeY">
+              <div key={item.name} className="col-md-3 d-flex services align-self-stretch p-4">
                 <div className="media block-6 d-block text-center">
                   <div className="icon d-flex justify-content-center align-items-center">
                     <span className={item.icon}></span>
@@ -49,7 +49,7 @@ const Services = ({ primary = true }: ServicesProps) => {
           </div>
 
           <div className="row">
-            <div className="col-md-12 text-center heading-section animate__animated animate__fadeIn">
+            <div className="col-md-12 text-center heading-section">
               <h2 className="mb-4 tworem">Usługi</h2>
               <p className="mb-5">
                 <b>Stomatologia zachowawcza</b><br />

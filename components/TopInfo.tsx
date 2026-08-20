@@ -19,12 +19,12 @@ const TopInfo = () => {
 
             {Content.items.map((item, key) => (
               <div key={item.name} className="col-lg-3 col-md-6 pb-3">
-                <div className="icon-box p-4 bg-light border-radius-10 text-center shadow-lg animate__animated animate__pulse">
+                <div className="icon-box p-4 bg-light border-radius-10 text-center shadow-lg">
                   <div className="icon-box-icon">
                   {item.icon}
                   </div>
                   <div className="icon-box-content">
-                    <h3 className="card-title cardhbig py-2">{item.name}</h3>
+                    <h2 className="card-title cardhbig py-2">{item.name}</h2>
                     <p>{item.text}</p>
                   </div>
                 </div>

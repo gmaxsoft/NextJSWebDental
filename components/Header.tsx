@@ -22,7 +22,7 @@ const header = () => {
                                         width: '100%',
                                         height: 'auto',
                                         maxWidth: '273px',
-                                        minHeight: '45px'
+                                        aspectRatio: '273 / 50',
                                     }}
                                     priority
                                 />

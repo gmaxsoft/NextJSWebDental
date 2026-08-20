@@ -28,7 +28,7 @@ const footer = () => {
                                             width: '100%',
                                             height: 'auto',
                                             maxWidth: '273px',
-                                            minHeight: '60px'
+                                            aspectRatio: '273 / 50',
                                         }}
                                     />
                                 </Link>
