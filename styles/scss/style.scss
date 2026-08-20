@@ -435,15 +435,24 @@ h5,
 
 .slider {
 	position: relative;
+	width: 100%;
 	height: 750px;
 	z-index: 0;
 	margin-bottom: -6rem;
 	background: #efeff1 !important;
+	text-align: center;
+	overflow: hidden;
 }
 
 .carousel-inner {
-	margin: auto;
+	margin: 0 auto;
 	text-align: center;
+	max-width: 1920px;
+}
+
+.slider .carousel-item img {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .carousel-indicators {
@@ -2324,6 +2333,7 @@ textarea.form-control {
 
 @media only screen and (max-width: 1399px) {
 	#our-services {
+		.icon-box-content h2.card-title,
 		.icon-box-content h3.card-title {
 			font-size: 1.2em;
 		}
@@ -2340,6 +2350,7 @@ textarea.form-control {
 			line-height: normal
 		}
 
+		.icon-box-content h2.card-title,
 		.icon-box-content h3.card-title {
 			font-size: 1.8em;
 		}
@@ -2437,6 +2448,19 @@ textarea.form-control {
 	left: 0;
 }
 
+.google-map {
+	min-height: 550px;
+	width: 100%;
+	background: #efeff1;
+}
+
 .google-map iframe {
+	display: block;
 	filter: grayscale(100%);
+}
+
+.parallax-bg {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
 }
