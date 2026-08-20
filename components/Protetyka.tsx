@@ -20,7 +20,7 @@ const Protetyka = () => {
               <p className="justify">{Content.txt_01}</p>
               <p className="justify">{Content.txt_02}</p>
               <p className="mb-4">&nbsp;</p>
-              <h4 className="mb-4 text-left">{Content.txt_03}</h4>
+              <h2 className="mb-4 text-left">{Content.txt_03}</h2>
               <p className="justify">- {Content.txt_04}</p>
               <p className="justify">- {Content.txt_05}</p>
               <p className="justify">- {Content.txt_06}</p>
@@ -28,7 +28,7 @@ const Protetyka = () => {
               <p className="mb-4">&nbsp;</p>
               <p className="justify">{Content.txt_08}</p>
               <p className="mb-4">&nbsp;</p>
-              <h3 className="mb-4 text-center">{Content.txt_10}</h3>
+              <h2 className="mb-4 text-center">{Content.txt_10}</h2>
               <p className="mb-4">&nbsp;</p>
               <p className="justify">{Content.txt_11}</p>
               <p className="justify"><strong>{Content.txt_12}</strong></p>
@@ -40,7 +40,7 @@ const Protetyka = () => {
             </div>
             <div className="col-md-12">
               <p className="mb-4">&nbsp;</p>
-              <h3 className="mb-4 text-center">{Content.txt_17}</h3>
+              <h2 className="mb-4 text-center">{Content.txt_17}</h2>
               <p className="mb-4">&nbsp;</p>
               <div className="mb-4 text-center"><Video /></div>
             </div>

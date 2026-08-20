@@ -24,7 +24,7 @@ const TopInfo = () => {
                   {item.icon}
                   </div>
                   <div className="icon-box-content">
-                    <h2 className="card-title cardhbig py-2">{item.name}</h2>
+                    <h3 className="card-title cardhbig py-2">{item.name}</h3>
                     <p>{item.text}</p>
                   </div>
                 </div>

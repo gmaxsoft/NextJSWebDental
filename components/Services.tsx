@@ -1,8 +1,17 @@
 "use client"
 import Content from "@/public/json/Services.json";
 import Divider from '@/components/Divider';
+import Link from 'next/link';
 
-const Services = () => {
+type ServicesProps = {
+  /** true = główna treść strony (h1); false = sekcja na stronie z innym h1 */
+  primary?: boolean;
+};
+
+const Services = ({ primary = true }: ServicesProps) => {
+  const TitleTag = primary ? 'h1' : 'h2';
+  const CardTag = primary ? 'h2' : 'h3';
+
   return (
     <>
       <Divider />
@@ -11,7 +20,7 @@ const Services = () => {
           <div className="row justify-content-center mb-5 pb-2">
             <div className="col-md-8 text-center heading-section animate__animated animate__fadeIn">
               <span className="subheading">{Content.title}</span>
-              <h1 className="mb-4 tworem">{Content.subtitle}</h1>
+              <TitleTag className="mb-4 tworem">{Content.subtitle}</TitleTag>
               <p>{Content.minititle}</p>
             </div>
           </div>
@@ -22,14 +31,16 @@ const Services = () => {
           </div>
 
           <div className="row mb-5 pb-2">
-            {Content.items.map((item, key) => (
+            {Content.items.map((item) => (
               <div key={item.name} className="col-md-3 d-flex services align-self-stretch p-4 animate__animated animate__shakeY">
                 <div className="media block-6 d-block text-center">
                   <div className="icon d-flex justify-content-center align-items-center">
                     <span className={item.icon}></span>
                   </div>
                   <div className="media-body p-2 mt-3">
-                    <h2 className="heading"><a href={item.url}>{item.name}</a></h2>
+                    <CardTag className="heading">
+                      <Link href={item.url}>{item.name}</Link>
+                    </CardTag>
                     <p>{item.text}</p>
                   </div>
                 </div>
