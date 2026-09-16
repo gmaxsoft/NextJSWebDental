@@ -18,19 +18,18 @@ const footer = () => {
                             <div className="footer-menu">
                                 <Link className="navbar-brand" href="/" title='Logo Dentysta Zielona Góra'>
                                     <Image
-                                        className="pb-3"
                                         src="/images/logo.webp"
                                         alt="Logo Dentysta Zielona góra"
                                         width={410}
                                         height={75}
-                                        sizes="273px"
+                                        unoptimized
                                         style={{
                                             width: '100%',
                                             height: 'auto',
                                             maxWidth: '273px',
-                                            aspectRatio: '410 / 75',
+                                            display: 'block',
+                                            marginBottom: '1rem',
                                         }}
-                                        quality={95}
                                     />
                                 </Link>
                                 <p className="text-justify pr2rem" dangerouslySetInnerHTML={{ __html: Content.tags }}></p>

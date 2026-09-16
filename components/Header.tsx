@@ -17,14 +17,13 @@ const header = () => {
                                     alt="Logo Dentysta"
                                     width={410}
                                     height={75}
-                                    sizes="273px"
+                                    unoptimized
                                     style={{
                                         width: '100%',
                                         height: 'auto',
                                         maxWidth: '273px',
-                                        aspectRatio: '410 / 75',
+                                        display: 'block',
                                     }}
-                                    quality={95}
                                     priority
                                 />
                             </Link>
