@@ -1,58 +1,122 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import Link from 'next/link';
-import Content from "@/public/json/Nav.json";
+import { useCallback, useEffect, useId, useState } from "react"
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Menu, X } from 'lucide-react'
+import Content from "@/public/json/Nav.json"
 
 const Navigation = () => {
-  
-  //Menu show after scroll down
-  const [scrolled, setScrolled] = useState(false);
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 200) {
-      setScrolled(true);
-    }
-    else {
-      setScrolled(false);
-    }
-  }
+  const pathname = usePathname()
+  const menuId = useId()
+  const [scrolled, setScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
-  //Show menu on Mobile
-  const [isActive, setIsActive] = useState(false);
-  const handleClick = () => {
-    // 👇️ toggle isActive state on click
-    setIsActive(current => !current);
-  };
+  const closeMenu = useCallback(() => setIsOpen(false), [])
+  const toggleMenu = useCallback(() => setIsOpen((open) => !open), [])
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-  })
+    const onScroll = () => setScrolled(window.scrollY > 200)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
-  let navbarClasses = ['navbar navbar-expand-lg navbar-dark ftco-navbar-light'];
-  if (scrolled) {
-    navbarClasses.push('scrolled');
+  // Zamknij menu po zmianie trasy (Next.js Link)
+  useEffect(() => {
+    closeMenu()
+  }, [pathname, closeMenu])
+
+  // Escape + blokada scrolla body gdy menu otwarte (iOS Safari)
+  useEffect(() => {
+    if (!isOpen) return
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeMenu()
+    }
+
+    const scrollY = window.scrollY
+    document.body.style.position = 'fixed'
+    document.body.style.top = `-${scrollY}px`
+    document.body.style.left = '0'
+    document.body.style.right = '0'
+    document.body.style.width = '100%'
+    document.body.style.overflow = 'hidden'
+    window.addEventListener('keydown', onKeyDown)
+
+    return () => {
+      document.body.style.position = ''
+      document.body.style.top = ''
+      document.body.style.left = ''
+      document.body.style.right = ''
+      document.body.style.width = ''
+      document.body.style.overflow = ''
+      window.scrollTo(0, scrollY)
+      window.removeEventListener('keydown', onKeyDown)
+    }
+  }, [isOpen, closeMenu])
+
+  const navClass = [
+    'navbar',
+    'navbar-expand-lg',
+    'navbar-dark',
+    'ftco-navbar-light',
+    scrolled ? 'scrolled' : '',
+    isOpen ? 'menu-open' : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
+
+  const isItemActive = (link: string) => {
+    if (link === '/') return pathname === '/'
+    const base = link.replace(/\/$/, '')
+    return pathname === link || pathname === base || pathname.startsWith(`${base}/`)
   }
 
   return (
-    <>
-      <nav className={navbarClasses.join(" ")} id="ftco-navbar">
-        <div className="container d-flex align-items-center">
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Przełącz menu" onClick={handleClick}>
-            <span className="oi oi-menu"></span> {Content.menu}
-          </button>
-          <div className={`collapse navbar-collapse ${isActive ? 'show' : ''}`} id="ftco-nav">
-            <ul className="navbar-nav m-auto">
-              {Content.items.map((item, key) => (
-                <li key={item.name} className={`nav-item ${key === 0 ? 'active' : ''}`}>
-                  <Link href={item.link} className={`nav-link ${key === 0 ? '' : 'pl-0'}`} title={item.text}>{item.name}</Link>
+    <nav className={navClass} id="ftco-navbar">
+      <div className="container d-flex flex-wrap align-items-center">
+        <button
+          type="button"
+          className="navbar-toggler"
+          aria-controls={menuId}
+          aria-expanded={isOpen}
+          aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}
+          onClick={toggleMenu}
+        >
+          {isOpen ? (
+            <X aria-hidden size={22} strokeWidth={2.25} />
+          ) : (
+            <Menu aria-hidden size={22} strokeWidth={2.25} />
+          )}
+          <span className="navbar-toggler-label">{Content.menu}</span>
+        </button>
+
+        <div
+          id={menuId}
+          className={`navbar-collapse mobile-nav-collapse ${isOpen ? 'is-open' : ''}`}
+        >
+          <ul className="navbar-nav m-auto">
+            {Content.items.map((item) => {
+              const isActive = isItemActive(item.link)
+
+              return (
+                <li key={item.name} className={`nav-item${isActive ? ' active' : ''}`}>
+                  <Link
+                    href={item.link}
+                    className="nav-link"
+                    title={item.text}
+                    onClick={closeMenu}
+                  >
+                    {item.name}
+                  </Link>
                 </li>
-              ))}
-            </ul>
-          </div>
+              )
+            })}
+          </ul>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   )
 }
 
